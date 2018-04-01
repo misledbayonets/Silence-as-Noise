@@ -1,0 +1,49 @@
+/**
+ * @file
+ * This composition does...
+ *
+ * @copyright Copyright © 2017 [cymaspace](https://vuo.org/user/421782)
+ * @see This is a Vuo Composition source code file.  See http://vuo.org for further information.
+ */
+
+digraph G
+{
+BlendImages [type="vuo.image.blend" version="1.2.1" label="Blend Images|<refresh>refresh\l|<background>background\l|<foreground>foreground\l|<blendMode>blendMode\l|<foregroundOpacity>foregroundOpacity\l|<replaceOpacity>replaceOpacity\l|<blended>blended\r" pos="240,236" fillcolor="magenta" _blendMode="\"normal\"" _foregroundOpacity="0.75" _replaceOpacity="true"];
+BlendImages2 [type="vuo.image.blend" version="1.2.1" label="Blend Images|<refresh>refresh\l|<background>background\l|<foreground>foreground\l|<blendMode>blendMode\l|<foregroundOpacity>foregroundOpacity\l|<replaceOpacity>replaceOpacity\l|<blended>blended\r" pos="482,76" fillcolor="magenta" _blendMode="\"normal\"" _foregroundOpacity="1" _replaceOpacity="true"];
+ConvertBooleanToReal [type="vuo.type.boolean.real" version="1.0.0" label="Convert Boolean to Real|<refresh>refresh\l|<boolean>boolean\l|<real>real\r" pos="670,-126"];
+Curve5 [type="vuo.motion.curve.VuoReal" version="2.0.0" label="Curve|<refresh>refresh\l|<time>time\l|<startPosition>startPosition\l|<endPosition>endPosition\l|<duration>duration\l|<curve>curve\l|<easing>easing\l|<loop>loop\l|<phase>phase\l|<value>value\r" pos="217,-43" fillcolor="cyan" _endPosition="0.074999999999999997" _duration="250" _curve="\"linear\"" _easing="\"in\"" _loop="\"mirror\"" _phase="0.0"];
+EclipseVisualizerImageGenerator [type="cymaspace.eclipseVisualizerImageGenerator" version="" label="Eclipse Visualizer Image Generator|<refresh>refresh\l|<width>width\l|<height>height\l|<time>time\l|<AudioInput>AudioInput\l|<outputImage>outputImage\r" pos="111,401" fillcolor="violet" _outputImage_eventThrottling="enqueue"];
+FireOnStart [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="30,50" fillcolor="yellow" _started_eventThrottling="enqueue"];
+GenerateWhiteNoise [type="cymaspace.generateWhiteNoise" version="" label="Generate White Noise|<refresh>refresh\l|<LoudnessInput>LoudnessInput\l|<RequestedChannels>RequestedChannels\r|<WhiteNoiseLoudnessOutput>WhiteNoiseLoudnessOutput\r" pos="550,-95" fillcolor="cyan" _RequestedChannels_eventThrottling="enqueue" _WhiteNoiseLoudnessOutput_eventThrottling="enqueue"];
+GetFirstItemInList [type="vuo.list.get.first.VuoAudioSamples" version="1.0.0" label="Get First Item in List|<refresh>refresh\l|<list>list\l|<firstItem>firstItem\r" pos="230,524"];
+MakeList [type="vuo.list.make.2.VuoWindowProperty" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="453,235" fillcolor="lime"];
+MaskImageByBrightness [type="vuo.image.color.mask.brightness" version="1.1.2" label="Mask Image by Brightness|<refresh>refresh\l|<image>image\l|<threshold>threshold\l|<thresholdType>thresholdType\l|<sharpness>sharpness\l|<maskedImage>maskedImage\r" pos="446,401" fillcolor="violet" _threshold="0.5" _thresholdType="\"luminance\"" _sharpness="0.9"];
+ReceiveKeyboardButtons [type="vuo.keyboard.button" version="1.0.1" label="Receive Keyboard Buttons|<refresh>refresh\l|<window>window\l|<key>key\l|<modifierKey>modifierKey\l|<repeatWhenHeld>repeatWhenHeld\l|<pressed>pressed\r|<released>released\r" pos="142,-242" fillcolor="yellow" _key="\"Space\"" _modifierKey="\"any\"" _repeatWhenHeld="false" _pressed_eventThrottling="enqueue" _released_eventThrottling="enqueue"];
+ReceiveKeyboardButtons2 [type="vuo.keyboard.button" version="1.0.1" label="Receive Keyboard Buttons|<refresh>refresh\l|<window>window\l|<key>key\l|<modifierKey>modifierKey\l|<repeatWhenHeld>repeatWhenHeld\l|<pressed>pressed\r|<released>released\r" pos="-256,257" _key="\"0\"" _modifierKey="\"any\"" _repeatWhenHeld="false" _pressed_eventThrottling="enqueue" _released_eventThrottling="enqueue"];
+ReceiveLiveAudio [type="vuo.audio.receive" version="1.0.1" label="Receive Live Audio|<refresh>refresh\l|<device>device\l|<receivedChannels>receivedChannels\r" pos="-168,531" fillcolor="yellow" _receivedChannels_eventThrottling="drop"];
+RenderImageToWindow [type="vuo.image.render.window" version="3.3.0" label="Render Image to Window|<refresh>refresh\l|<image>image\l|<setWindowProperties>setWindowProperties\l|<showedWindow>showedWindow\r|<requestedFrame>requestedFrame\r" pos="499,209" fillcolor="lime" _showedWindow_eventThrottling="enqueue" _requestedFrame_eventThrottling="drop"];
+Round [type="vuo.math.round" version="2.0.0" label="Round|<refresh>refresh\l|<real>real\l|<rounded>rounded\r" pos="498,19"];
+Scale [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="571,-237" fillcolor="blue" _start="0." _end="1." _scaledStart="1" _scaledEnd="2" _limitToRange="false"];
+SelectFromListofMoviesImageGenerator [type="cymaspace.selectFromListofMoviesImageGenerator" version="" label="Select From List of Movies Image Generator|<refresh>refresh\l|<width>width\l|<height>height\l|<time>time\l|<FolderLocation>FolderLocation\l|<outputImage>outputImage\r" pos="93,128" fillcolor="magenta" _FolderLocation="\"..\\/media\\/video\"" _outputImage_eventThrottling="enqueue"];
+SelectInput2 [type="vuo.select.in.2.VuoReal" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<option1>option1\l|<option2>option2\l|<out>out\r" pos="413,-84"];
+Toggle [type="vuo.logic.toggle" version="1.0.0" label="Toggle|<refresh>refresh\l|<toggle>toggle\l|<value>value\r" pos="371,-245" fillcolor="blue"];
+
+BlendImages2:blended -> BlendImages:background;
+BlendImages:blended -> RenderImageToWindow:image;
+ConvertBooleanToReal:real -> Scale:value;
+Curve5:value -> SelectInput2:option2;
+EclipseVisualizerImageGenerator:outputImage -> MaskImageByBrightness:image;
+FireOnStart:started -> SelectFromListofMoviesImageGenerator:refresh;
+FireOnStart:started -> Toggle:toggle;
+GetFirstItemInList:firstItem -> EclipseVisualizerImageGenerator:AudioInput;
+MakeList:list -> RenderImageToWindow:setWindowProperties;
+MaskImageByBrightness:maskedImage -> BlendImages:foreground;
+ReceiveKeyboardButtons:released -> Toggle:toggle;
+ReceiveLiveAudio:receivedChannels -> GetFirstItemInList:list;
+RenderImageToWindow:requestedFrame -> Curve5:time;
+Round:rounded -> SelectInput2:which;
+Scale:scaledValue -> Round:real;
+SelectFromListofMoviesImageGenerator:outputImage -> BlendImages2:foreground;
+SelectInput2:out -> GenerateWhiteNoise:LoudnessInput;
+Toggle:value -> ConvertBooleanToReal:boolean;
+}
